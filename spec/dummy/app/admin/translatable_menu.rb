@@ -1,0 +1,1 @@
+TranslatableMenus::ActiveAdminIntegrator.integrate!

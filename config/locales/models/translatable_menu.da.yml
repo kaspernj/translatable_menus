@@ -1,0 +1,10 @@
+da:
+  activerecord:
+    attributes:
+      translatable_menus/translatable_menu:
+        id: ID
+        title: Titel
+    models:
+      translatable_menus/translatable_menu:
+        one: Menu
+        other: Menuer

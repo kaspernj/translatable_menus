@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    attributes:
+      translatable_menus/translatable_menu:
+        id: ID
+        title: Title
+    models:
+      translatable_menus/translatable_menu:
+        one: Menu
+        other: Menus
