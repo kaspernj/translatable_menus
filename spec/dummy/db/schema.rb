@@ -30,23 +30,25 @@ ActiveRecord::Schema.define(version: 20140427135759) do
 
   create_table "translatable_menus_translatable_menu_translations", force: true do |t|
     t.integer  "translatable_menus_translatable_menu_id", null: false
-    t.string   "locale",                                    null: false
+    t.string   "locale",                                  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
     t.text     "url"
+    t.string   "active"
   end
 
-  add_index "translatable_menus_translatable_menu_translations", ["locale"], name: "index_afd9cffd2bd9ddb90e8434a91864e68f2212a082"
-  add_index "translatable_menus_translatable_menu_translations", ["translatable_menus_translatable_menu_id"], name: "index_26c5ed1bb8ecd8b7dc47415b6efbd449698be8ed"
+  add_index "translatable_menus_translatable_menu_translations", ["locale"], name: "index_b5bdea3e699c1a8cad9df47da514c93e18598e33"
+  add_index "translatable_menus_translatable_menu_translations", ["translatable_menus_translatable_menu_id"], name: "index_8d91ce9c55f6f8961b3925b26376023e86ba2cb0"
 
   create_table "translatable_menus_translatable_menus", force: true do |t|
     t.integer  "menu_id"
     t.string   "identifier"
     t.string   "default_title"
     t.string   "default_url"
+    t.boolean  "default_active",        default: true
     t.integer  "sort_number"
-    t.string   "http_method"
+    t.string   "http_method",           default: "get"
     t.boolean  "require_not_signed_in"
     t.boolean  "require_signed_in"
     t.text     "require_callbacks"
