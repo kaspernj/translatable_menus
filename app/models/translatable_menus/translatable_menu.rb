@@ -10,9 +10,9 @@ class TranslatableMenus::TranslatableMenu < ActiveRecord::Base
   accepts_nested_attributes_for :translations
   
   def url_to_use
-    if url
+    if url.present?
       url_str = url
-    elsif default_url
+    elsif default_url.present?
       url_str = default_url
     else
       raise "No URL has been set for this menu item."
