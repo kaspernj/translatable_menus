@@ -28,7 +28,7 @@ GIT
 PATH
   remote: .
   specs:
-    translatable_menus (0.0.1)
+    translatable_menus (0.0.2)
       devise
       globalize (~> 4.0.1)
       rails (~> 4.0.4)
