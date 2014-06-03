@@ -11,7 +11,7 @@ class TranslatableMenus::ActiveAdminIntegrator
         column :default_active
         column :menu
         translation_status
-        default_actions
+        actions
       end
       
       form do |f|
