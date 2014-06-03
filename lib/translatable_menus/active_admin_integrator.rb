@@ -15,6 +15,8 @@ class TranslatableMenus::ActiveAdminIntegrator
       end
       
       form do |f|
+        f.semantic_errors *f.object.errors.keys
+        
         f.inputs do
           f.input :menu_id, :as => :select, :collection => TranslatableMenus::TranslatableMenu.all
           f.input :identifier

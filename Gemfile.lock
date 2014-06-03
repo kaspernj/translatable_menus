@@ -28,10 +28,10 @@ GIT
 PATH
   remote: .
   specs:
-    translatable_menus (0.0.2)
+    translatable_menus (0.0.3)
       devise
-      globalize (~> 4.0.1)
-      rails (~> 4.0.4)
+      globalize (>= 4.0.0)
+      rails (>= 4.0.0)
       string-cases
 
 GEM
