@@ -37,6 +37,39 @@ class TranslatableMenus::ActiveAdminIntegrator
         
         f.actions
       end
+      
+      show do
+        attributes_table do
+          row :id
+          row :menu
+          row :identifier
+          row :default_title
+          row :default_url
+          row :default_active
+          row :sort_number
+          row :http_method
+          row :require_not_signed_in
+          row :require_signed_in
+          row :require_callbacks
+          row :created_at
+          row :updated_at
+          
+          I18n.available_locales.each do |locale|
+            row(:locale){ locale }
+            
+            I18n.with_locale locale do
+              row :title
+              row :active
+              row :url
+            end
+          end
+        end
+      end
+      
+      # Fixes a bug where attributes wasn't assigned correctly - kaspernj
+      before_save do |menu|
+        menu.assign_attributes(permitted_params[:translatable_menu])
+      end
     end
   end
 end
