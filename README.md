@@ -1,5 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/kaspernj/translatable_menus/badges/gpa.svg)](https://codeclimate.com/github/kaspernj/translatable_menus)
 [![Test Coverage](https://codeclimate.com/github/kaspernj/translatable_menus/badges/coverage.svg)](https://codeclimate.com/github/kaspernj/translatable_menus)
+[![Build Status](https://api.shippable.com/projects/540e7b9f3479c5ea8f9ec260/badge?branchName=master)](https://app.shippable.com/projects/540e7b9f3479c5ea8f9ec260/builds/latest)
 
 # TranslatableMenus
 
