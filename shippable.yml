@@ -5,6 +5,6 @@ before_script:
   - RAILS_ENV=test rake db:migrate
   - RAILS_ENV=test rake plugin_migrator:migrate
 script:
-  - bundle exec rspec
+  - CODECLIMATE_REPO_TOKEN=ecf9cd21fb049b17c24a93a49ecc2ce41308b68cfca23190ef035a8ffc319615 bundle exec rspec
 notifications:
    email: false
