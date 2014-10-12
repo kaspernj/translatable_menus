@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/kaspernj/translatable_menus/badges/gpa.svg)](https://codeclimate.com/github/kaspernj/translatable_menus)
+[![Test Coverage](https://codeclimate.com/github/kaspernj/translatable_menus/badges/coverage.svg)](https://codeclimate.com/github/kaspernj/translatable_menus)
+
 # TranslatableMenus
 
 ## Install & setup
