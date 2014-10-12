@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "globalize", ">= 4.0.0"
   s.add_dependency "devise"
   s.add_dependency "string-cases"
+  s.add_dependency "plugin_migrator"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"

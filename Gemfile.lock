@@ -31,6 +31,7 @@ PATH
     translatable_menus (0.0.4)
       devise
       globalize (>= 4.0.0)
+      plugin_migrator
       rails (>= 4.0.0)
       string-cases
 
@@ -122,6 +123,8 @@ GEM
     minitest (4.7.5)
     multi_json (1.9.2)
     orm_adapter (0.5.0)
+    plugin_migrator (0.0.1)
+      rails (>= 4.0.0)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     polyglot (0.3.4)
