@@ -1,12 +1,9 @@
-require "activeadmin-globalize"
-
 class TranslatableMenus::TranslatableMenu < ActiveRecord::Base
   translates :title, :url, :active
 
   has_many :menus, :class_name => "TranslatableMenu", :foreign_key => :menu_id
   belongs_to :menu, :class_name => "TranslatableMenu", :foreign_key => :menu_id
 
-  active_admin_translates :title, :url, :active
   accepts_nested_attributes_for :translations
 
   def url_to_use
